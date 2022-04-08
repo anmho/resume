@@ -1,3 +1,4 @@
+
 %-------------------------
 % Resume in Latex
 % Author : Andrew Ho
@@ -62,7 +63,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-    \titlerule\vspace{-10pt}\scshape\center\large\bfseries
+    \titlerule\vspace{-5pt}\scshape\center\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -129,7 +130,7 @@
 \begin{center}
     {\Huge \scshape Andrew Ho} \\ \vspace{1pt}
     Irvine, CA 92620 \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ 949-245-4519 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{andyminhtuanho@gmail.com}} ~
+    \small \raisebox{-0.1\height}\faPhone\ 949-245-4519 ~ \href{mailto:andyminhtuanho@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{andyminhtuanho@gmail.com}} ~
     \href{https://linkedin.com/in/andrewmnho/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/andrewmnho}}  ~
     \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/anmho}}
     \vspace{-8pt}
@@ -140,7 +141,8 @@
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Irvine Valley College \normalfont{\small{-- Irvine, CA}}}{\normalfont{Computer Science}}
+{Irvine Valley College, Santa Monica College \normalfont{\small{}}}
+{\normalfont{Computer Science}}
 {B.S. June 2024} {\textbf{GPA 4.0/4.0}}
 \resumeSubHeadingListEnd
 
@@ -152,9 +154,11 @@
         \item\small Data Structures
         \item Software Engineering
         \item Algorithms
-        \item Artificial Intelligence
-        \item Systems Programming
+        % \item Intro to A.I.
+        \item Networking
+        % \item Systems Programming
         \item Computer Architecture
+        \item Digital Logic
     \end{itemize}
 \end{multicols}
 \vspace*{2.0\multicolsep}
@@ -166,55 +170,81 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{Juniper} $|$ \emph{Java, Python, Parse, Heroku, Android Studio}}{September 2021}
+{\textbf{Watchlist - Movie Recommendation App} $|$ \emph{Flask, React, PostgreSQL, pandas, scikit-learn, Ubuntu}}{Jan. 2022}
+\resumeItemListStart
+\resumeItem{ Created web app where users list 5 favorite movies and given recommendations based on collaborative filtering machine learning model API. }
+\resumeItem{ Built Flask REST API which serves data and hosts collaborative filtering machine learning model for movie recommendations using MovieLens dataset and TMDB API. }
+\resumeItem{ Users can swipe left/right to get more accurate movie recommendations }
+\resumeItem{ Frontend written in React. }
+\resumeItemListEnd
+\vspace{-13pt}
+
+\resumeProjectHeading
+{\textbf{unicart - Budgeting App} $|$ \emph{Flask, Python, JavaScript, PostgreSQL, Bootstrap, Ubuntu }}{Jan. 2022}
+\resumeItemListStart
+\resumeItem{ Built web app where users can create, update, delete, and share product wishlists of products across all websites. }
+\resumeItem{Utilizes web scraping to retrieve image metadata and for client rendering }
+\resumeItem{Hosted on remote Ubuntu Server using Linode.}
+\resumeItemListEnd
+\vspace{-13pt}
+
+\resumeProjectHeading
+{\textbf{SpiceTracker - Recipe Sharing Android Mobile App} $|$ \emph{Java, Python, Firebase, Android Studio}}{Sep. 2021}
 \resumeItemListStart
 \resumeItem{Built an Android app that where users can post, share, and view other users recipes.}
-\resumeItem{Worked with a team of four on a GitHub repository where I developed the logic of the Android App and machine learning recipe recommendation API hosted on Heroku.}
+\resumeItem{Developed logic of the Android App while on team of four. }
+\resumeItem{Implemented search funciontality, infinite pagination, and recipe fetching logic.}
+\resumeItem{Managed multiple branches with team members on GitHub repository.}
 \resumeItem{Users can like, follow, and comment on other users posts.}
 \resumeItemListEnd
 \vspace{-13pt}
 
-\resumeProjectHeading
-{\textbf{Flixster} $|$ \emph{Java, YouTube API, Android Studio}}{September 2021}
-\resumeItemListStart
-\resumeItem{Developed an Android app that retrieves currently playing films and fetches movie data using TheMovieDB API.}
-\resumeItem{Users can tap on a movie and retreive a description and view the trailer using YouTube API.}
-\resumeItemListEnd
+% \resumeProjectHeading
+% {\textbf{Flixster - Movie Browsing App} $|$ \emph{Java, YouTube API, Android Studio}}{Sep. 2021}
+% \resumeItemListStart
+% \resumeItem{Developed an Android app that retrieves currently playing films and fetches movie data using TheMovieDB API.}
+% \resumeItem{Users can tap on a movie and retreive a description and view the trailer using YouTube API.}
+% \resumeItemListEnd
+% \vspace{-13pt}
 
-\vspace{-13pt}
+
 \resumeProjectHeading
-{\textbf{Simdemic} $|$ \emph{JavaScript, HTML, CSS}}{June 2021}
+{\textbf{Instagram Clone Android App} $|$ \emph{Java, Firebase, Android Studio}}{Oct. 2021}
+\resumeItemListStart
+\resumeItem{Instagram Clone Android app using Java and Firebase backend.}
+\resumeItem{Utilized Android camera API to upload photos.}
+\resumeItem{Pagination by fetching user follow list from Firestore.}
+\resumeItem{Users can post, sign up, sign in, and view their profile}
+\resumeItemListEnd
+\vspace{-13pt}
+
+% \resumeProjectHeading
+% {\textbf{GitHub Automatic Login Verifier} $|$ \emph{Python, Selenium}}{Aug. 2021}
+% \resumeItemListStart
+% \resumeItem{Built an automatic login and username verifier using Selenium and Python}
+% \resumeItemListEnd
+% \vspace{-13pt}
+
+% \resumeProjectHeading
+% {\textbf{MyDJ - Music Recommender} $|$ \emph{Python, matplotlib, NumPy, sci-kit-learn, pandas}}{Jul. 2021}
+% \resumeItemListStart
+% \resumeItem{Built music genre prediction app based on user demographic and preferences using Python, matplotlib, NumPy, sci-kit-learn, and pandas.}
+% \resumeItemListEnd
+% \vspace{-13pt}
+
+\resumeProjectHeading
+{\textbf{Simdemic - Pandemic Simulator} $|$ \emph{JavaScript, HTML, CSS}}{Jun. 2021}
 \resumeItemListStart
 \resumeItem{Developed hackathon prototype pandemic simulation service web application.}
 \resumeItem{Designed mathematical model to replicate virus spreading.}
 \resumeItem{Created ability to adjust variables and factors to change simulation.}
 \resumeItem{Pitched to hackathon judges as SaaS for governments agencies and businesses.}
 \resumeItemListEnd
-\vspace{-13pt}
-
-\resumeProjectHeading
-{\textbf{Instagram Clone} $|$ \emph{Java, Parse, Android Studio}}{October 2021}
-\resumeItemListStart
-\resumeItem{Instagram Clone Android app using Java and Parse backend.}
-\resumeItem{Users can post, sign up, sign in, and view their profile}
-\resumeItemListEnd
-\vspace{-13pt}
-
-\resumeProjectHeading
-{\textbf{MyDJ} $|$ \emph{Python, matplotlib, NumPy, sci-kit-learn, pandas}}{July 2021}
-\resumeItemListStart
-\resumeItem{Designed and released a music genre prediction app based on user demographic and preferences using Python, matplotlib, NumPy, sci-kit-learn, and pandas.}
-\resumeItemListEnd
-\vspace{-13pt}
-
-\resumeProjectHeading
-{\textbf{GitHub Automatic Verifier} $|$ \emph{Python, Selenium}}{August 2021}
-\resumeItemListStart
-\resumeItem{Built an automatic login and username verifier using Selenium and Python}
-\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 \vspace{-15pt}
+
+
 
 
 %-----------EXPERIENCE-----------
@@ -222,10 +252,10 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Love Yourself Clothing Startup}{Aug. 2018 -- Sept. 2019}
-{Front End Web Developer}{Irvine, CA}
+{Love Yourself - Clothing Startup}{Aug. 2018 -- Jan. 2019}
+{Web Developer}{Irvine, CA}
 \resumeItemListStart
-\resumeItem{Developed web store for local clothing startup brand using HTML CSS, and created a custom navigation bar}
+\resumeItem{Developed, managed, and maintained web store for local clothing startup brand using HTML CSS, and JavaScript}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -257,7 +287,7 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
                     \textbf{Languages}{: Python, JavaScript, Java, C, C++, HTML/CSS, PostgreSQL} \\
-                    \textbf{Tools/Frameworks}{: Flask, React.js, Selenium, Unix, sklearn, pandas, Visual Studio Code, Android Studio, Git} \\
+                    \textbf{Tools/Frameworks}{: Flask, React.js, Selenium, Ubuntu, sklearn, pandas, Visual Studio Code, Android Studio, Git, GitHub} \\
               }}
 \end{itemize}
 \vspace{-16pt}
