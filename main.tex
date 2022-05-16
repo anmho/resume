@@ -63,8 +63,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-    \titlerule\vspace{-5pt}\scshape\center\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+    \titlerule\vspace{-8pt}\scshape\center\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -130,9 +130,13 @@
 \begin{center}
     {\Huge \scshape Andrew Ho} \\ \vspace{1pt}
     Irvine, CA 92620 \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ 949-245-4519 ~ \href{mailto:andyminhtuanho@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{andyminhtuanho@gmail.com}} ~
-    \href{https://linkedin.com/in/andrewmnho/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/andrewmnho}}  ~
-    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/anmho}}
+    \small \raisebox{-0.1\height}\faPhone\ 949-245-4519 ~ 
+    \raisebox{-0.2\height}\faEnvelope\  {andyminhtuanho@gmail.com} ~
+    % \href{mailto:andyminhtuanho@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{andyminhtuanho@gmail.com}} ~
+    \raisebox{-0.2\height}\faLinkedin\ {linkedin.com/in/andrewmnho}  ~
+    % \href{https://linkedin.com/in/andrewmnho/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/andrewmnho}}  ~
+    \raisebox{-0.2\height}\faGithub\ {github.com/anmho}
+    % \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/anmho}}
     \vspace{-8pt}
 \end{center}
 
@@ -140,15 +144,17 @@
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
+% \resumeSubheading
+% {Irvine Valley College, Santa Monica College \normalfont{\small{}}}
 \resumeSubheading
-{Irvine Valley College, Santa Monica College \normalfont{\small{}}}
-{\normalfont{Computer Science}}
-{B.S. June 2024} {\textbf{GPA 4.0/4.0}}
+{University of California, Irvine \normalfont{\small{}}}
+{\normalfont{June 2024}}
+{B.S. Computer Science} {\textbf{GPA 4.0/4.0}}
 \resumeSubHeadingListEnd
 
 %------RELEVANT COURSEWORK-------
 \section{Relevant Coursework}
-%\resumeSubHeadingListStart
+% \resumeSubHeadingListStart
 \begin{multicols}{4}
     \begin{itemize}[itemsep=-5pt, parsep=3pt]
         \item\small Data Structures
@@ -162,7 +168,34 @@
     \end{itemize}
 \end{multicols}
 \vspace*{2.0\multicolsep}
-%\resumeSubHeadingListEnd
+% \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Snap Inc.}{Jun. 2022 -- Aug. 2022}
+{Incoming Snap Engineering Academy Intern}{Santa Monica, CA}
+% \resumeItemListStart
+% \resumeItem{Incoming}
+% \resumeItemListEnd
+
+\resumeSubheading
+{Love Yourself - Clothing Startup}{Aug. 2020 -- Jan. 2021}
+{Web Developer}{Irvine, CA}
+\resumeItemListStart
+\resumeItem{Developed, managed, and maintained web store for local clothing startup brand leading to 50\% increase in sales using HTML CSS, and JavaScript}
+\resumeItem{Utilized Stripe API to handle customer payments}
+\resumeItemListEnd
+
+
+
+
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
 
 %-----------PROJECTS-----------
 \section{Projects}
@@ -170,32 +203,31 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{Watchlist - Movie Recommendation App} $|$ \emph{Flask, React, PostgreSQL, pandas, scikit-learn, Ubuntu}}{Jan. 2022}
+{\textbf{Watchlist - Full Stack Movie Recommender Web App} $|$ \emph{Flask, React, PostgreSQL, Chakra UI, pandas, Ubuntu}}{Jan. 2022}
 \resumeItemListStart
 \resumeItem{ Built backend Flask REST API which serves data to React frontend and hosts collaborative filtering machine learning model for movie recommendations. }
-\resumeItem{ API utilizes MovieLens dataset and TMDB API. }
-\resumeItem{ Users list 5 favorite movies and given recommendations based on collaborative filtering machine learning model API. }
+\resumeItem{ Machine learning model trained with MovieLens dataset with over 2.5 million ratings and The Movie Database API using cosine similarity. }
+\resumeItem{ API Provides client with recommendations based on collaborative filtering machine learning model API.   }
 \resumeItem{ Users can swipe left/right to get more accurate movie recommendations }
 \resumeItemListEnd
 \vspace{-13pt}
 
 \resumeProjectHeading
-{\textbf{unicart - Budgeting App} $|$ \emph{Flask, Python, JavaScript, PostgreSQL, Bootstrap, Ubuntu }}{Jan. 2022}
+{\textbf{unicart - Budgeting Web App} $|$ \emph{Flask, Python, JavaScript, React, PostgreSQL, Bootstrap, Ubuntu }}{Jan. 2022}
 \resumeItemListStart
-\resumeItem{ Built web app where users can create, update, delete, and share product wishlists of products across all websites. }
-\resumeItem{Utilizes web scraping to retrieve image metadata and for client rendering }
-\resumeItem{Hosted on remote Ubuntu Server using Linode.}
+\resumeItem{ Users can manage and share product wishlists of products across all websites }
+\resumeItem{ Built web scraping API to retrieve image metadata for client rendering }
+\resumeItem{ Hosted on remote Ubuntu Server using Linode. }
 \resumeItemListEnd
 \vspace{-13pt}
 
 \resumeProjectHeading
-{\textbf{SpiceTracker - Recipe Sharing Android Mobile App} $|$ \emph{Java, Python, Firebase, Android Studio}}{Sep. 2021}
+{\textbf{SpiceTracker - Recipe Sharing Android Mobile App} $|$ \emph{Java, Firebase, Android Studio}}{Sep. 2021}
 \resumeItemListStart
-\resumeItem{Built an Android app that where users can post, share, and view other users recipes.}
-\resumeItem{Developed logic of the Android App while on team of four. }
-\resumeItem{Implemented search funciontality, infinite pagination, and recipe fetching logic.}
-\resumeItem{Managed multiple branches with team members on GitHub repository.}
-\resumeItem{Users can like, follow, and comment on other users posts.}
+\resumeItem{Collaborated with team of four to build app that where users can manage recipes and other user's recipes}
+\resumeItem{Implemented search functionality, infinite pagination, and recipe fetching logic}
+\resumeItem{Managed multiple branches and sprint goals using GitHub Issues}
+\resumeItem{Users can like, follow, and comment on other users posts}
 \resumeItemListEnd
 \vspace{-13pt}
 
@@ -208,15 +240,15 @@
 % \vspace{-13pt}
 
 
-\resumeProjectHeading
-{\textbf{Instagram Clone Android App} $|$ \emph{Java, Firebase, Android Studio}}{Oct. 2021}
-\resumeItemListStart
-\resumeItem{Instagram Clone Android app using Java and Firebase backend.}
-\resumeItem{Utilized Android camera API to upload photos.}
-\resumeItem{Implemented pagination by fetching user follow list from Firestore.}
-\resumeItem{Users can post, sign up, sign in, and view their profile}
-\resumeItemListEnd
-\vspace{-13pt}
+% \resumeProjectHeading
+% {\textbf{Instagram Clone Android App} $|$ \emph{Java, Firebase, Android Studio}}{Oct. 2021}
+% \resumeItemListStart
+% \resumeItem{Instagram Clone Android app using Java and Firebase backend.}
+% \resumeItem{Utilized Android camera API to upload photos.}
+% \resumeItem{Implemented pagination by fetching user follow list from Firestore.}
+% \resumeItem{Users can post, sign up, sign in, and view their profile}
+% \resumeItemListEnd
+% \vspace{-13pt}
 
 % \resumeProjectHeading
 % {\textbf{GitHub Automatic Login Verifier} $|$ \emph{Python, Selenium}}{Aug. 2021}
@@ -245,38 +277,12 @@
 \vspace{-15pt}
 
 
-
-
-%-----------EXPERIENCE-----------
-\section{Experience}
-\resumeSubHeadingListStart
-
-\resumeSubheading
-{Love Yourself - Clothing Startup}{Aug. 2020 -- Jan. 2021}
-{Web Developer}{Irvine, CA}
-\resumeItemListStart
-\resumeItem{Developed, managed, and maintained web store for local clothing startup brand using HTML CSS, and JavaScript}
-\resumeItemListEnd
-
-\resumeSubheading
-{Phi Theta Kappa Honors Society}{Aug. 2021 -- Present}
-{College Project}{Irvine, CA}
-\resumeItemListStart
-\resumeItem{Worked with school administration to bring a new leadership skills course to Irvine Valley College students.}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-\vspace{-16pt}
-
-
-
 %-----------PROGRAMMING SKILLS-----------
 \section{Awards/Achievements}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
                     \textbf{Competitions }{\textbf{--} Winner of health\{hacks\} 2021 hackathon out of \textbf{178} participants. Designed a machine-learning pandemic simulation tool over 24 hours with JavaScript, HTML, CSS, MySQL. Presented to a panel of \textbf{9} Ivy League judges}} \\
-        \textbf{Awards }{\textbf{--} AP Scholar w/ Distinction. Granted to students who receive an average score of at least 3.5 on all
-            AP Exams taken, and scores of 3 or higher on five or more of these exams, IVC Dean's List} \\
+        \textbf{Awards }{\textbf{--} IVC Dean's List, AP Scholar w/ Distinction, IVC Scholarship Foundation} \\
     }
 \end{itemize}
 \vspace{-16pt}
@@ -286,8 +292,8 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-                    \textbf{Languages}{: Python, JavaScript, Java, C, C++, HTML/CSS, PostgreSQL} \\
-                    \textbf{Tools/Frameworks}{: Flask, React.js, Selenium, Ubuntu, sklearn, pandas, Visual Studio Code, Android Studio, Git, GitHub} \\
+        \textbf{Languages}{: Python, JavaScript, Java, HTML, CSS, PostgreSQL, C, C++} \\
+        \textbf{Tools/Frameworks}{: Flask, React.js, Node.js, Selenium, Bootstrap, Chakra-UI, sklearn, pandas, Ubuntu, Visual Studio Code, Android Studio, Git, GitHub} \\
               }}
 \end{itemize}
 \vspace{-16pt}
