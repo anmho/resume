@@ -1,7 +1,6 @@
-
 %-------------------------
 % Resume in Latex
-% Author : Andrew Ho
+% Author : Jake Gutierrez
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
@@ -19,10 +18,8 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{fontawesome5}
-\usepackage{multicol}
-\setlength{\multicolsep}{-3.0pt}
-\setlength{\columnsep}{-1pt}
+\usepackage{changepage} % For adjustwidth environment
+
 \input{glyphtounicode}
 
 
@@ -35,11 +32,7 @@
 
 % serif
 % \usepackage{CormorantGaramond}
-\usepackage{charter}
-% \usepackage{helvet}
-% \renewcommand{\familydefault}{\sfdefault}
-
-
+% \usepackage{charter}
 
 
 \pagestyle{fancy}
@@ -49,11 +42,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -63,8 +56,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-    \titlerule\vspace{-5pt}\scshape\center\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -77,16 +70,10 @@
   }
 }
 
-\newcommand{\classesList}[4]{
-    \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
-  }
-}
-
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -100,17 +87,16 @@
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -127,243 +113,161 @@
 %   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
 % \end{tabular*}
 
-\begin{center}
-    {\Huge \scshape Andrew Ho} \\ \vspace{1pt}
-    Irvine, CA 92620 \\ \vspace{1pt}
-    % \small \raisebox{-0.1\height}\faPhone\ 949-245-4519 ~ 
-    \raisebox{-0.2\height}\faEnvelope\  {andyminhtuanho@gmail.com} ~
-    % \href{mailto:andyminhtuanho@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{andyminhtuanho@gmail.com}} ~
-    % \raisebox{-0.2\height}\faLinkedin\ {linkedin.com/in/andrewmnho}  ~
-    \href{https://linkedin.com/in/andrewmnho/}{\raisebox{-0.2\height}\faLinkedin\ \underline{andrewmnho}}  ~
-    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{anmho}}~
-    \href{https://andrewmho.netlify.app//}{\raisebox{-0.2\height}\faGlobe\ \underline{andrewmho.netlify.app/}}
-    \vspace{-8pt}
-\end{center}
+% \begin{adjustwidth}{-0.8in}{-0.8in} % Adjust margins to touch the page edges
+%     \noindent % Prevent paragraph indentation
+%     \begin{minipage}[t]{0.4\linewidth}
+%         \centering
+%         \textbf{\Huge \scshape Andrew Ho}
+%     \end{minipage}%
+%     \begin{minipage}[t]{0.5\linewidth}
+%         \begin{flushright} % Align content in this minipage to the right
+%             \href{https://github.com/anmho}{github.com/anmho} \\
+%             \href{https://andrewho.io}{andrewho.io}
+%         \end{flushright}
+%     \end{minipage}
+% \end{adjustwidth}
 
+\noindent % Prevent paragraph indentation
+\begin{tabular}{@{}c@{}}
+    \textbf{\Huge \scshape Andrew Ho}
+\end{tabular}%
+\hfill%
+\begin{minipage}[t]{0.2\linewidth}
+    \raggedleft % Align content in this minipage to the right
+    \href{https://github.com/anmho}{github.com/anmho} \\
+    \href{https://andrewho.io}{andrewho.io}
+\end{minipage}
 
 %-----------EDUCATION-----------
 \section{Education}
-\resumeSubHeadingListStart
-% \resumeSubheading
-% {Irvine Valley College, Santa Monica College \normalfont{\small{}}}
-\resumeSubheading
-{University of California, Irvine \normalfont{\small{}}}
-{\normalfont{Exp. June 2025}}
-% {\normalfont{Exp. Grad June 2025}}
-% {B.S. Computer Science} {\textbf{}}
-{B.S. Computer Science} {\textbf{GPA 3.85}}
-% {B.S. Software Engineering} {\textbf{GPA 3.7}}
-% {B.S. Computer Science} {\textbf{}}
-% {B.S. Software Engineering} {\textbf{}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Irvine}{Expected June 2025}
+      {B.S. in Computer Science, Minor in Statistics}{\textbf{GPA 3.8}}
+    \resumeItem{\textbf{Coursework:} Data Structures \& Algorithms, Computer Architecture, Machine Learning, Databases, Design \& Analysis of Algorithms, Probabalistic Graphical Models, Info Retrieval \& Data Clustering, Distributed Systems}
 
 
-\resumeSubHeadingListEnd
-
-\vspace{-4pt}
-\underline{Coursework}{}
-\normalfont{: Data Structures and Algorithms, Computer Architecture, Machine Learning, Databases, Design \& Analysis of Algorithms, Probabalistic Graphical Models for Machine Learning}
-
-\vspace{-4pt}
-
-
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+  
 
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-\resumeSubHeadingListStart
+  \resumeSubHeadingListStart
 
-\resumeSubheading
-{Snap Inc. $|$ Backend, Microservices }{Jun. 2023 - Present}
-{Software Engineer Intern}{Santa Monica, CA}
-\resumeItemListStart
-\resumeItem{Utilized \textbf{Kafka} distributed event streaming to construct a real-time analytics backend for KPIs to better adjust monetization and ranking models, improving ads ranking accuracy and A/B cost analysis by \textbf{14\%}}
-% \resumeItem{Utilized VPC peering to integrate directly with Snap’s service mesh using Java, GCP, Kubernetes, gRPC, Envoy, Helm, and mTLS sidecar to ensure scalability and security, saving infra costs by 30\%.}
-\resumeItem{Applied \textbf{gRPC} API endpoints to integrate with existing service mesh microservice architecture, saving infra costs by \textbf{43\%}}
-\resumeItem{Leveraged \textbf{Strimzi} operators, \textbf{GKE, Kubernetes, and Helm} to orchestrate the Kafka cluster.}
-\resumeItem{Implemented \textbf{Druid} multi-dimensional range partitioning algorithm to maximize parallelism, improving batch pipeline and ad-hoc query performance by \textbf{22\%}}
-\resumeItem{Streamlined developer workflow by creating Docker dev cluster, reducing ramp up time by \textbf{12\%}.}
+    \resumeSubheading
+      {Snap Inc. $|$ Backend, Data Infrastructure}{June 2023 -- Present}
+      {Software Engineer Intern}{Santa Monica, CA}
+      \resumeItemListStart
+        % \resumeItem{Constructed \textbf{Kafka} distributed event streaming cluster to build real-time data analytics \textbf{Java} backend, enhancing monetization, costs, and ML ranking models, improving ads ranking accuracy and A/B cost analysis.}
+        % \resumeItem{Implemented data streaming ingestion for Snap's data platform backend using \textbf{Java, Scala, and Kafka}}
+      % , using \textbf{Java, Scala, and Kafka}, supporting \textbf{8 billion metrics per day}
+        
+        % \resumeItem{Developed distributed stream processing system for Snap's realtime ads ranking analytics platform for real-time data warehouse ingestion into \textbf{GCS} and \textbf{Druid}.}
+        \resumeItem{Developed distributed transactional stream processing system platform using \textbf{Kafka}, \textbf{GCS}, \textbf{Java}, and \textbf{Druid}, enabling real-time data insights for monetization \& ML models, supporting \textbf{8 billion transactions/day}}
+        \resumeItem{Optimized multi-dimensional range partitioning algorithm for \textbf{Dataflow (Beam)} pipelines in \textbf{Scala} using \textbf{quantile sketches} improving ad-hoc query performance and resource consumption on hot-keys by \textbf{22\%}}
+        % \resumeItem{Utilized VPC peering to integrate directly with Snap’s service mesh using Java, GCP, Kubernetes, gRPC, Envoy, Helm, and mTLS sidecar to ensure scalability and security, saving infra costs by 30\%.}
+        % \resumeItem{Spearheaded \textbf{service mesh} integration with \textbf{Istio}, \textbf{gRPC}, \textbf{Go}, and \textbf{Java}, projected to save infra costs by \textbf{31\%}.}
+        \resumeItem{Orchestrated \textbf{Kafka} event streaming cluster with \textbf{Strimzi} operators, \textbf{Google Kubernetes Engine}, and \textbf{Helm}}
+        % \resumeItem{Streamlined developer workflow by creating \textbf{docker-compose} local cluster, reducing ramp up by \textbf{5 days}.}
 
+      \resumeItemListEnd
 
-\resumeItemListEnd
+   \resumeSubheading
+      {University of California, Irvine $|$ Backend API Development}{Dec. 2022 -- Jun. 2023}
+      {Backend Software Developer}{Irvine, CA}
+      \resumeItemListStart
+          \resumeItem{Built data exploration tool to explore employee performance and seamlessly export tables tables to annual report template, saving \textbf{100+ hours} of employee hours at fiscal year end using \textbf{C\# ASP.NET}.}
+        \resumeItem{Streamlined employee management workflow and automate promotion tracking and event booking features for features using \textbf{C\#}, \textbf{Angular, TypeScript, MUI}, and \textbf{SCSS}}
+      \resumeItemListEnd
+      
 
+    \resumeSubheading
+      {Saplink $|$ Backend API Development}{June. 2023 -- Present}
+      {Backend Software Engineer Intern}{Irvine, CA}
+      \resumeItemListStart
+        \resumeItem{4th employee. Built backend using \textbf{Nest.js} and \textbf{PostgreSQL} to connect talented engineers to early stage founders}
+        \resumeItem{Integrated OAuth2 with \textbf{auth0} to deliver one-click workflow automation tools with Octokit.js GitHub SDK.}
+        \resumeItem{Deployed Docker containerized app to \textbf{AWS EC2} for successful academic year launch of \textbf{5000+} users}
+      \resumeItemListEnd
+      
+   \resumeSubheading
+      {Snap Inc. $|$ Full-Stack}{June 2022 -- Aug. 2022}
+      {Software Engineer Intern}{Santa Monica, CA}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Snapchat} food scan feature to match unfamiliar ingredients to recipes, tutorials, snack facts.}
+        \resumeItem{Integrated \textbf{Apple Maps API} to find affordable ingredients in user's proximity using React-Native.}
+        \resumeItem{Collaborated with UI/UX design, marketing, and non-profit, \textbf{\textit{Our Own}} to analyze product-market fit.}
+      \resumeItemListEnd
+      
+    
 
-\resumeSubheading
-{University of California, Irvine}{Dec. 2022 - Present}
-{Full-Stack Web Developer}{Irvine, CA}
-\resumeItemListStart
-% \resumeItem{
-% Selected as 1 of 15 students to participate in a software engineering career training experience over 9 weeks}
-% \resumeItem{Constructing backend for Sumaversity financial education software platform to support financial inclusion for underrepresented Latinx communities using Ruby on Rails, MySQL, and AWS.}
-\resumeItem{Building scalable \textbf{C\# REST APIs}, Student Center tools such as internal employee management tools, bookings, analytics tools, and student body applications using \textbf{SQL Server, JavaScript, TypeScript, Angular, AWS EC2, C\# ASP.NET} \textbf{SCSS}, \textbf{Jenkins}, and \textbf{Grafana}}
+    
 
-% % \resumeItem{
-% % Engaged in career development workshops and mentorship with Snap software engineers}
-\resumeItemListEnd
+    % \resumeSubheading
+    %   {Stanford University}{June 2020}
+    %   {Software Developer}{Palo Alto, CA}
+    %   \resumeItemListStart
+    %     \resumeItem{Collaborated in team of four engineers and designers to deliver pandemic simulation tool using Javascript}
+    %     \resumeItem{Employed stochastic agent-based models to simulate the spread of Covid-19 with Brownian motion dynamics}
+    % \resumeItemListEnd
 
+    % \resumeSubheading
+    %   {LYS Craft Garments}{Sep. 2018 -- Present}
+    %   {Software Engineer Intern}{Irvine, CA}
+    %   \resumeItemListStart
+    %     \resumeItem{Revamped web store for mental health focused lifestyle/clothing brand startup using \textbf{React}, \textbf{Flask}, \textbf{Strapi}.}
+    %     \resumeItem{Integrated \textbf{Stripe API} to handle customer transactions, leading to \textbf{50\%} increase in sales.}
+    % \resumeItemListEnd
 
-
-% \resumeSubheading
-% {Suma Wealth $|$ Backend}{Incoming Nov. 2022 - Present}
-% {Software Engineer Intern}{Santa Monica, CA}
-% \resumeItemListStart
-% % \resumeItem{
-% % Selected as 1 of 15 students to participate in a software engineering career training experience over 9 weeks}
-% \resumeItem{Constructing backend for Sumaversity financial education software platform to support financial inclusion for underrepresented Latinx communities using Ruby on Rails, MySQL, and AWS.}
-
-% % % \resumeItem{
-% % % Engaged in career development workshops and mentorship with Snap software engineers}
-% \resumeItemListEnd
-
-\resumeSubheading
-% {Snap Inc. | Full-Stack }{ Jun. 2022 -- Aug. 2022}
-{Snap Inc. $|$ Full Stack \& Leadership}{ Jun. 2022 -- Aug. 2022}
-% {Software Engineering Scholar}{Santa Monica, CA}
-{Software Engineering Scholar}{Santa Monica, CA}
-\resumeItemListStart
-% \resumeItem{
-% Selected as 1 of 15 students to participate in a software engineering career training experience over 9 weeks}
-\resumeItem {
-Developed Snapchat feature addressing food-security using \textbf{React-Native, Firebase, Firestore, and Auth}}
-\resumeItem{ Integrated scan functionality allowing users to scan unfamiliar ingredients for related recipes, tutorials, snack facts, and Apple Maps API to find affordable ingredients in user's proximity.}
-\resumeItem{
-Collaborated in cross-functional environment including UI/UX design and marketing teams in partnership with the non-profit, \textbf{\textit{Our Own}}. }
-% \resumeItem{
-% Engaged in career development workshops and mentorship with Snap software engineers}
-\resumeItemListEnd
-
-% Conducted market research, developed a progress roadmap for the team, established use cases for the application, collaborated with UI/UX designer on designs, implemented changes based on mentor feedback, and ensured communication and synchronization between design, frontend, and backend engineers.
-
-% A 9-week summer internship where student teams work on projects with mentorship of engineering & product leaders from Snap
-
-% Implemented frontend designs for various screens of mobile application using React Native, while utilizing 3rd party libraries.
-
-
-% \resumeSubheading
-% {Love Yourself $|$ Full Stack }{Aug. 2020 -- Jan. 2021}
-% {Web Developer}{Irvine, CA}
-% \resumeItemListStart
-% \resumeItem{Developed web store as lead developer using HTML, CSS, and JavaScript for local mental health focused clothing startup brand leading to \textbf{50\%} increase in sales}
-% % \resumeItem{Integrated \textbf{Stripe API} to handle customer payments, resulting in \textbf{24\%} faster checkout time}
-% % \resumeItem{Integrated \textbf{Stripe API} to handle customer payments}
-% \resumeItem{Integrated \textbf{Stripe Payments API} to handle customer payments}
-
-% \resumeItemListEnd
-
-
-
-
-\resumeSubHeadingListEnd
-\vspace{-16pt}
+  \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
 \section{Projects}
-\vspace{-5pt}
-\resumeSubHeadingListStart
-
-% \resumeProjectHeading
-% {\textbf{Tradely - Crypto Exchange} $|$ \emph{Flask, Python, React, React-Native, PostgreSQL, AWS Lambda, Kafka, OAuth2, Redis }}
-% {Jun. 2023}
-% \resumeItemListStart
-% \resumeItem{Built crypto currency exchange using containerized \textbf{Flask microservices} and \textbf{React} allowing users to trade cryptocurrencies.}
-% \resumeItem{Utilized Coinbase Cloud API to provide users live-streaming data for over 250 cryptocurrencies.}
-% \resumeItem{Implemented order matching, price determination, and bid-ask spread}
-
-% \resumeItemListEnd
-% \vspace{-13pt}
-
-
-\resumeProjectHeading
-{\textbf{Watchlist - Machine Learning Movie Recommendations} $|$ \emph{Flask, React, PostgreSQL, Chakra-UI, pandas, Kubernetes, AWS EKS}}
-% {Jan. 2022}
-{}
-\resumeItemListStart
-\resumeItem{ Constructed \textbf{Flask microservices} powered by machine learning to provide ML movie recommendations and additional core functionality to \textbf{React} frontend. }
-\resumeItem{ Designed \textbf{collaborative filtering ML model} trained with MovieLens dataset with over \textbf{2.5 million} ratings and TMDB API, using cosine similarity methods. }
-\resumeItemListEnd
-\vspace{-13pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Bankly - Peer Payments \& Banking } $|$ \emph{Stripe, Spring Boot, Java, Python, Kubernetes}}{April 2023 -- May 2023}
+          \resumeItemListStart
+            \resumeItem{Implemented peer-to-peer transactions, similar to \textbf{Venmo/Zelle} using \textbf{Stripe API} and \textbf{Java Spring Boot}}
+            \resumeItem{Utilized \textbf{Plaid API} to handle bank integrations and fetch bank transactions, credit, and investment data.}
+            \resumeItem{Developed Flask microservices to display user finance analytics with \textbf{ARIMA} to analyze spending patterns and \textbf{LSTM} and \textbf{isolation forest} models for \textbf{fraud detection} with \textbf{Flask}, hosted on \textbf{AWS EKS}}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Watchlist - AI Movie Recommendations} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{Sept 2023 -- Present}
+          \resumeItemListStart
+            % \resumeItem{ Built \textbf{Flask Go, \& Java} microservices to deliver ML movie recs and core functions to \textbf{React} frontend.}
+            \resumeItem{ Trained \textbf{collaborative filtering ML ranking model} on MovieLens dataset with over \textbf{2.5 million} ratings using ensemble methods including cosine similarity and distributed training techniques for rapid model updates.}
+            \resumeItem{ Utilized \textbf{gRPC, mTLS} for inter-service communication with retries, load balancing, and \textbf{Redis} for scalability.}
+          \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
 
 
 
-% \resumeProjectHeading
-% {\textbf{Unicart - Budgeting Web App} $|$ \emph{Flask, Python, JavaScript, PostgreSQL, Bootstrap, Ubuntu }}
-% % {Jan. 2022}
-% {}
-% \resumeItemListStart
-% \resumeItem{ Built web app using \textbf{Flask} allowing users to manage and share product wishlists of products across multiple websites }
-% \resumeItem{ Developed \textbf{web scraping API} to retrieve image metadata for client rendering }
-% \resumeItem{ Hosted on remote \textbf{Ubuntu} Server using Linode. }
-% \resumeItemListEnd
-% \vspace{-13pt}
-
-% \resumeProjectHeading
-% {\textbf{SpiceTracker - Recipe Sharing Android Mobile App} $|$ \emph{Java, Firebase, Android Studio}}
-% % {Sep. 2021}
-% {}
-% \resumeItemListStart
-% \resumeItem{Collaborated with team of four to build app that where users can manage recipes and other user's recipes}
-% \resumeItem{Implemented search functionality, infinite pagination, and recipe fetching logic}
-% \resumeItem{Managed multiple branches and sprint goals using GitHub Issues}
-% \resumeItem{Users can like, follow, and comment on other users posts}
-% \resumeItemListEnd
-% \vspace{-13pt}
-
-\resumeProjectHeading
-% {\textbf{MySteamStats} $|$ \emph{Flask, React, Material UI, Heroku, Steam Web API}}
-% % {Jun. 2021}
-% {}
-% \resumeItemListStart
-% \resumeItem{Developed \textbf{React} web app client to display any user's Steam play time analytics.}
-% \resumeItem{Deployed \textbf{Flask} server utilizing Steam Web API to handle client log-in requests and fetch owned game playtime.}
-% \resumeItemListEnd
-{\textbf{WealthTracker - Personal Finance } $|$ \emph{Flask, React, Docker, ECS, Stripe API,  Plaid}}
-% {Jun. 2021}
-{}
-\resumeItemListStart
-\resumeItem{Developed \textbf{React} web app client to display any user's finance analytics.}
-\resumeItem{Deployed \textbf{Flask} server utilizing Plaid API to handle bank integrations requests and fetch bank, credit, and investment data. Utilized ARIMA to analyze spending anomalies}
-\resumeItemListEnd
-\vspace{-13pt}
-
-
-
-% \resumeProjectHeading
-% {\textbf{Simdemic - Pandemic Simulator} $|$ \emph{JavaScript, HTML, CSS}}
-% % {Jun. 2021}
-% {}
-% \resumeItemListStart
-% \resumeItem{Developed pandemic simulation service web app which models virus spread based on an actor model.}
-% \resumeItem{Designed mathematical model to replicate virus spreading.}
-% \resumeItem{Implemented modifiable simulation variables to enhance interactivity.}
-% \resumeItemListEnd
-
-
-\resumeSubHeadingListEnd
-% \vspace{-15pt}
-\vspace{-2pt}
-
+%
 %-----------PROGRAMMING SKILLS-----------
-\section{Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-        \textbf{Languages}{: Python, JavaScript, TypeScript, Go, Java, HTML, CSS, SQL, R, C, C++, Arduino} \\
-        \textbf{Tools/Frameworks}{: gRPC, Flask, Django, React.js, PostgreSQL, MySQL, Node.js, Selenium, AWS, Docker, Kubernetes, React-Native, Bootstrap, Chakra-UI, Webpack, Vite, TailwindCSS, scikit-learn, pandas, numpy, Ubuntu, Code, Android Studio, Git, GitHub, Cassandra, PySpark, , Gradle} \\
-        }}
-              
-\end{itemize}
-\vspace{-16pt}
+     \textbf{Languages}{: Python, Java, TypeScript, Go, Scala, JavaScript, HTML, CSS, SQL, R, C, C++} \\
+     \textbf{Frameworks}{: Spring Boot, Flask, Kubernetes, Docker, gRPC, GraphQL, AWS, Google Cloud, React.js, PostgreSQL, MySQL, Node.js, Selenium, NextJS, Git, MongoDB, Cassandra, DynamoDB, PySpark, CockroachDB, Stripe, Tensorflow, PyTorch, Keras, pandas, numpy} \\
+     % auth0, Django, React-Native, TailwindCSS, 
+     % \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
 
-%-----------AWARDS-----------
-\section{Awards}
-\begin{itemize}[leftmargin=0.15in, label={}]
+ \end{itemize}
+
+\section{Awards/Organizations}
+ \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-        \textbf{Competitions }{\textbf{--} Winner of Stanford's health\{hacks\} 2021 hackathon out of \textbf{178} participants. Designed a machine-learning pandemic simulation tool over 24 hours with JavaScript, HTML, CSS, MySQL. Presented to a panel of \textbf{9} Ivy League judges.}} \\
-        \textbf{Awards }{\textbf{--} IVC Dean's List (3.5 GPA or higher), AP Scholar w/ Distinction, IVC Scholarship Foundation} \\
-        \textbf{Organizations }{\textbf{--} Data at UCI, Hack at UCI, ACM, Music Education for Undergraduates, Autonomous Roomba Team} \\
-    }
-\end{itemize}
+     \textbf{Awards/Competitions}{: Winner of \textbf{Stanford}'s health\{hacks\} 2021 hackathon out of \textbf{178} participants. Presented a stochastic agent-based machine learning pandemic simulation tool built over 24 hours to a panel of \textbf{9} Ivy League judges.} \\
+     \textbf{Organizations}{: Data at UCI, Hack at UCI, ACM, Music Education for Undergraduates, Autonomous Roomba Team}
+    }}
+ \end{itemize}
 
 
-% \vspace{-16pt}
-
+%-------------------------------------------
 \end{document}
