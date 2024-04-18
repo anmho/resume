@@ -146,7 +146,7 @@
       {University of California, Irvine}{Expected June 2025}
     %   {B.S. in Computer Science, Minor in Statistics}{\textbf{GPA 3.7}}
     %   {University of California, Irvine}{Irvine, CA}
-      {B.S. in Computer Science, Minor in Statistics}{\textbf{GPA 3.87  }}
+      {B.S. in Computer Science, Minor in Statistics}{\textbf{GPA 3.83  }}
     \resumeItem{\textbf{Coursework:} Relational Databases, NoSQL, Algorithms, Search Engines, Distributed Systems, Operating Systems}
 
     % \resumeItem{\textbf{Organizations:} ICS Student Council Project Committee, Hack at UCI Technology Organizer}
@@ -161,11 +161,14 @@
   
 
     \resumeSubheading
-      {Snap Inc.}{Sep. 2023 -- Oct. 2023}
-      {Software Engineer Intern}{Santa Monica, CA}
+      {Software Engineer Intern $|$ Cloud Data Backend}{Sep. 2023 -- Oct. 2023}
+      {Snap Inc.}{Los Angeles, CA}
       \resumeItemListStart
-        \resumeItem{Designed and implemented multi-dimensional range partitioning algorithm using \textit{Java, Beam, \& Spark}  to evenly distributed hot-key across \textit{Apache Druid} worker node segments}
-        \resumeItem{Improved quantile sketches query speed and cut down compute costs by \textbf{35\%} caused by hot-key and CPU underutilization using data locality using range partitions and salted indexes allowing cluster scale-down.}
+        \resumeItem{Designed and implemented multi-dimensional range partitioning for \textit{Apache Druid} analytics database cluster.}
+        \resumeItem{Created \textit{Apache Beam \& Spark (PySpark)} pipelines to evenly distribute rows across data segments using \textit{quantile sketches} and salted range indexes to remove hot-keys and improve query speed and compute costs by \textbf{35\%}..}
+        % \resumeItem{Managed ads ETL pipelines using Apache Airflow and Apache Spark (PySpark) from \textit{BigQuery} and \textit{Apache Druid} for \textit{Hasura GraphQL} proxy server to power company-wide analytics dashboard}
+        \resumeItem{Served analytics data through \textit{Hasura GraphQL} proxy to \textit{React} dashboard, reducing load times by \textbf{50\%}.}
+        
 
 
         % \resumeItem{Designed and implemented enhancements to the Ads Payments system, focusing on improving payment processing and transaction tracking, utilizing technologies such as \textbf{Golang}, \textbf{Docker}, \textbf{gRPC}, \textbf{MongoDB}}
@@ -173,30 +176,29 @@
         % \resumeItem{Built a fraud detection feature using \textbf{Golang} to reduce fraud rates by 5\%, enhancing the security and trustworthiness of Ads Payments transactions with machine learning.}
       \resumeItemListEnd
 
-      \resumeSubheading
-      {Irvine Fintech Association}{Jan. 2024 - Present}
-      {VP of Projects}{Santa Monica, CA}
+    %   \resumeSubheading
+    %   {Irvine Fintech Association}{Jan. 2024 - Present}
+    %   {Vice President of Projects}{Irvine, CA}
+    %   \resumeItemListStart
+    %     \resumeItem{Leading inaugural projects team to allow exploration of financial technology innovations such as neobanking, personal lending, and credit risk assessment using machine learning techniques}
+    %     \resumeItem{Designing workshops to educate members on application integration with tools like \textit{Stripe, Ramp, \& Plaid}}
+
+    %     % \resumeItem{Designed and implemented enhancements to the Ads Payments system, focusing on improving payment processing and transaction tracking, utilizing technologies such as \textbf{Golang}, \textbf{Docker}, \textbf{gRPC}, \textbf{MongoDB}}
+    %     % \resumeItem{Created new \textbf{Helm} charts in \textbf{k8s} to streamline payment verification processes, resulting in increased efficiency and reduced processing times, while leveraging \textbf{AWS} services and \textbf{Kubernetes} for scalability.}
+    %     % \resumeItem{Built a fraud detection feature using \textbf{Golang} to reduce fraud rates by 5\%, enhancing the security and trustworthiness of Ads Payments transactions with machine learning.}
+    %   \resumeItemListEnd
+
+    \resumeSubheading
+      {Learning Assistant $|$ Operating Systems}{Apr. 2024 -- Present}
+      {University of California, Irvine}{Irvine, CA}
       \resumeItemListStart
-        \resumeItem{Leading inaugural projects team to allow exploration of financial technology innovations such as neobanking, personal lending, and credit risk assessment using machine learning techniques}
-        \resumeItem{Designing workshops to educate members on application integration with tools like \textit{Stripe, Ramp, \& Plaid}}
+        \resumeItem{Taught \textbf{250+} students about syscalls, processes, threads, virtual memory, scheduling, networking, and synchronization in \textit{ICS 53 Principles of Operating Systems}}
+        \resumeItem{Held weekly office hours to assist students with debugging, assignments, and conceptual understanding of operating systems principles}
+    \resumeItemListEnd
 
-        % \resumeItem{Designed and implemented enhancements to the Ads Payments system, focusing on improving payment processing and transaction tracking, utilizing technologies such as \textbf{Golang}, \textbf{Docker}, \textbf{gRPC}, \textbf{MongoDB}}
-        % \resumeItem{Created new \textbf{Helm} charts in \textbf{k8s} to streamline payment verification processes, resulting in increased efficiency and reduced processing times, while leveraging \textbf{AWS} services and \textbf{Kubernetes} for scalability.}
-        % \resumeItem{Built a fraud detection feature using \textbf{Golang} to reduce fraud rates by 5\%, enhancing the security and trustworthiness of Ads Payments transactions with machine learning.}
-      \resumeItemListEnd
-
-      \resumeSubheading
-      {ICS Student Council}{Nov 2023 -- Present}
-      {Project Lead}{Irvine, CA}
-      \resumeItemListStart
-          \resumeItem{Led migration to serverless microservice architecture with AWS Lambda, API Gateway, Node.js, and DynamoDB to power popular academic tools with \textbf{20,000+ active users} such as \textit{\underline{\href{https://zotistics.com/}{Zotistics}}} and \textit{\underline{\href{https://antalmanac.com/}{AntAlmanac}}}}
-        %   \resumeItem{Lead backend developer for Zotlease, a unified housing platform for University students, using \textbf{Go}, \textbf{Stripe Connect}, \textbf{PostgreSQL}, \textbf{Docker}, \textbf{Supabase} Auth, and Amazon Web Services}
-
-      \resumeItemListEnd
-
-      \resumeSubheading
-      {Snap Inc. }{June 2023 -- Sep. 2023}
-      {Software Engineer Intern}{Santa Monica, CA}
+    \resumeSubheading
+      {Software Engineer Intern $|$ Distributed Messaging}{June 2023 -- Sep. 2023}
+      {Snap Inc.}{Los Angeles, CA}
       \resumeItemListStart
         % \resumeItem{Constructed \textbf{Kafka} distributed event streaming cluster to build real-time data analytics \textbf{Java} backend, enhancing monetization, costs, and ML ranking models, improving ads ranking accuracy and A/B cost analysis.}
         % \resumeItem{Implemented data streaming ingestion for Snap's data platform backend using \textbf{Java, Scala, and Kafka}}
@@ -207,72 +209,54 @@
         % using React, Java, Hasura, GraphQL, Node.js, TypeScript
         % \resumeItem{Added real-time data visualization with \textbf{React}, \textbf{TypeScript}, \textbf{GraphQL}}
         % \resumeItem{Orchestrated \textbf{Kafka} cluster with \textbf{Kubernetes, ZooKeeper} to support streaming analytics ingestion for \textbf{Google Cloud Storage}, using \textbf{Apache Druid} on \textbf{Compute Engine} clusters processing \textbf{200TB} data stream each day}
-        \resumeItem{Developed streaming ingestion for big data visualization platform for Snap ranking and engagement ML models}
-        \resumeItem{Deployed \textit{Apache Kafka} cluster on \textit{GCP Kubernetes Engine} to process \textbf{200TB} ads metrics data stream each day}
-        \resumeItem{Integrated directly with Snap Envoy service mesh using \textbf{Go}, gRPC, and Helm to reduce redundancy saving infra costs by \textbf{33\%}.}
+        % \resumeItem{Developed streaming ingestion for big data visualization platform for Snap ranking and engagement ML models}
+        \resumeItem{Deployed \textit{Apache Kafka} cluster using \textit{Kubernetes} to process \textbf{200TB/day} analytics metrics stream.}
+        \resumeItem{Developed real-time data warehouse ingestion into \textit{Google Cloud Storage} using \textit{Apache Druid} streaming ingestion}
+        \resumeItem{Integrated with \textit{Envoy} service mesh using \textit{Go}, \textit{gRPC}, and \textit{Helm} saving infra costs by \textbf{24\%}.}
+        
         % \resumeItem{Spearheaded service mesh integration with \textbf{Confluent} Platform, \textbf{gRPC}, \textbf{Go} - projected cost savings 31\%}
         % \resumeItem{Orchestrated \textbf{Kafka} event streaming cluster with \textbf{Strimzi}, \textbf{Kubernetes}, \textbf{Grafana}, \textbf{Prometheus}, and \textbf{gRPC}}
         % \resumeItem{Streamlined developer workflow by creating \textbf{docker-compose} local cluster, reducing ramp up by \textbf{5 days}.}
 
       \resumeItemListEnd
 
-   \resumeSubheading
-      {UCI Student Center \& Event Services}{Dec. 2022 -- Present}
-      {L4 Software Developer}{Irvine, CA}
-      \resumeItemListStart
-          \resumeItem{Spearheaded a data exploration tool to assess employee performance and streamline data export to annual reports, saving 100+ employee hours during fiscal year-end using \textit{C\#, Typescript, D3.js, and AWS Lambda}}
-          \resumeItem{Utilized \textit{C\#, .NET, AWS EC2, Jenkins, and SQL Server, Angular} to build employee management suite, student employee scheduling, and event booking services. }
-      \resumeItemListEnd
-
-    
+    \resumeSubheading
+        {L4 Software Engineer $|$ Backend Engineering}{Dec. 2022 -- Present}
+        {UCI Student Center \& Event Services}{Irvine, CA}
+        \resumeItemListStart
+            \resumeItem{Spearheaded a data analysis dashboard to assess employee performance and streamline data export to annual reports, saving \textbf{100+} employee hours during fiscal year-end using \textit{C\#, .NET, Typescript, D3.js, and SQL Server}.}
+            \resumeItem{Build and deploy employee management tools such as \textit{LevelUp} (performance review platform), event booking, and reservation services to streamline event planning procedures.}
+        \resumeItemListEnd
       
 
-    % \resumeSubheading
-    %   {Seedlink $|$ Payments Platform API}{Jan. 2023 - June 2023}
-    %   {Software Engineer Intern}{Irvine, CA}
-    %   \resumeItemListStart
-    %     \resumeItem{Built platform backend using \textbf{Nest.js} and \textbf{PostgreSQL} to connect talented engineers to early stage founders}
-    %     \resumeItem{Integrated OAuth2 with \textbf{auth0} to deliver one-click workflow automation tools with Octokit.js \textbf{GitHub SDK}.}
-    %     \resumeItem{Built subscription service with \textbf{Stripe API} deployed on \textbf{AWS EC2} for successful launch of \textbf{500+} users}
-    %   \resumeItemListEnd
+      
 
+   
     %   \resumeSubheading
-    %   {Backend Software Engineer Intern $|$ Content Ranking Backend}{Jan. 2023 - June 2023}
-    %   {Takes Inc.}{Irvine, CA}
+    %   {Projects Team Developer $|$ API Team }{Nov 2023 -- Present}
+    %   {ICS Student Council}{Irvine, CA}
     %   \resumeItemListStart
-    %     \resumeItem{Engineered multivariate posts ranking algorithm API using \textbf{Express.js} improving engagement by 23\%}
-    %     \resumeItem{Optimized and cached \textbf{MongoDB} queries, reducing connection latency and serverless cold-starts by 15\%}
+    %     \resumeItem{Developed a dining tracker to view dining hall menus, schedules, and nutrition facts using \textit{React-Native}.}
+
+    %     \resumeItem{Built serverless backend to process 100+ dishes per day ZotMeal serving \textbf{20,000+} students using \textit{AWS Lambda, API Gateway, Typescript, Node.js, and PostgreSQL (AWS RDS)}.}
+
+    %     % \resumeItem{Created dining app to serverless microservice architecture with \textbf{AWS Lambda}, API Gateway, Node.js, \textbf{Typescript}, \textbf{PostgreSQL}, React-Native and build tools powering popular academic tools with \textbf{20,000+ active users} such as \textit{\underline{\href{https://zotistics.com/}{Zotistics}}} and \textit{\underline{\href{https://antalmanac.com/}{AntAlmanac}}}}
+          
+    %     %   \resumeItem{Lead backend developer for Zotlease, a unified housing platform for University students, using \textbf{Go}, \textbf{Stripe Connect}, \textbf{PostgreSQL}, \textbf{Docker}, \textbf{Supabase} Auth, and Amazon Web Services}
+
     %   \resumeItemListEnd
+    
       
-%    \resumeSubheading
-%       {Snap Inc.}{June 2022 -- Aug. 2022}
-%       {Software Engineering Academy Intern}{Santa Monica, CA}
-%       \resumeItemListStart
-%         \resumeItem{Developed \textbf{Snapchat} food scan feature to match unfamiliar ingredients to recipes, tutorials, snack facts.}
-%         \resumeItem{Integrated \textbf{Apple Maps API} to find affordable ingredients in user's proximity using \textbf{React-Native} and \textbf{Flask}.}
-%         \resumeItem{Collaborated with UI/UX design, marketing, and non-profit, \textbf{\textit{Our Own}} to analyze product-market fit.}
-%       \resumeItemListEnd
-      
-    
-
-    
-
     % \resumeSubheading
-    %   {Stanford University}{June 2020}
-    %   {Software Developer}{Palo Alto, CA}
+    %   {Research Developer}{June 2020}
+    %   {Stanford University}{Palo Alto, CA}
     %   \resumeItemListStart
-    %     \resumeItem{Collaborated in team of four engineers and designers to deliver pandemic simulation tool using Javascript}
-    %     \resumeItem{Employed stochastic agent-based models to simulate the spread of Covid-19 with Brownian motion dynamics}
-    % \resumeItemListEnd
-    
-    % \resumeSubheading
-    %   {LYS Craft Garments}{Sep. 2018 -- Present}
-    %   {Software Engineer Intern}{Irvine, CA}
-    %   \resumeItemListStart
-    %     \resumeItem{Revamped web store for mental health focused lifestyle/clothing brand startup using \textbf{React}, \textbf{Flask}, \textbf{Strapi}.}
-    %     \resumeItem{Integrated \textbf{Stripe API} to handle customer transactions, leading to \textbf{50\%} increase in sales.}
+    %     \resumeItem{Collaborated in team of four engineers and designers to deliver pandemic simulation tool using \textbf{Javascript}}
+    %     \resumeItem{Explored stochastic Brownian motion agent-based models to simulate Covid-19 spread and social distancing.}
     % \resumeItemListEnd
 
+    
+    
   \resumeSubHeadingListEnd
 
 
@@ -305,24 +289,46 @@
         %   \resumeItemListEnd
 
         \resumeProjectHeading
-          {\textbf{Bobarank.com - Bubble Tea Discovery} \emph{Typescript, Next.js, React, Tailwind, MongoDB}}{}
+        %   {\textbf{Bobarank.com - Bubble Tea Leaderboards} \emph{React, Typescript, Next.js, Tailwind, MongoDB}}{}
+        %   \resumeItemListStart
+        %   \resumeItem{Built a platform for users to discover the best boba stores in their area}
+        %   \resumeItem{Users can vote in in Head-to-Head competitions to update the elo rankings of boba stores.}
+        %   \resumeItemListEnd
+          {\textbf{Unix Shell} $|$ \emph{C, gcc, Docker, Ubuntu, bash}}{}
           \resumeItemListStart
-          \resumeItem{Built a platform for users to discover the best boba stores in their area}
-          \resumeItem{Users can vote in in Head-to-Head competitions to update the elo rankings of boba stores.}
+          \resumeItem{Created a Unix shell with built-in commands such as cd, ls, mkdir, rm, grep, history, piping, and redirection}
+          \resumeItem{Supports infinite piping, background processes, graceful shutdown, and signal handling.}
           \resumeItemListEnd
 
-        \resumeProjectHeading
-          {\textbf{Zotlease - Student Housing Marketplace} $|$ \emph{Go, React, React-Native, Stripe, AWS, Supabase Auth}}{}
+
+          {\textbf{Map Reduce Implementation} $|$ \emph{Go, Docker, Amazon Web Services}}{}
           \resumeItemListStart
-            \resumeItem{Built student platform to find subleases and roommates to using React, React-Native, Go, and CockroachDB}
-            \resumeItem{Implemented automated payment processing using Stripe Connect to improve user experience and security}
+          \vspace{-5pt}
+
+          \resumeItem{Implemented a distributed MapReduce framework using Go for parallel processing of large datasets.}
+          \resumeItem{Driver process distributes tasks among workers and handles worker failures through RPC communication.}
           \resumeItemListEnd
+        % \resumeProjectHeading
+        %   {\textbf{CIFAR-10 Machine Learning Classification} \emph{PyTorch, Jupyter, Scikit-Learn, numpy, matplotlib, pandas}}{}
+        %   \resumeItemListStart
+        %   \resumeItem{Developed and evaluated machine learning models for image classification using the CIFAR-10 dataset containing 60,000 images in 10 classes.}
+        %   \resumeItem{Compared accuracy, precision, recall, and F1 score of various models such as CNN, MLP, Random Forest (XGBoost), and KNN}
+        %   \resumeItem{Performed hyperparameter tuning (activation function, SGD, batch size, hidden layers, LR) to find optimal performance.
+        %   }
+        %   \resumeItemListEnd
+
+        % \resumeProjectHeading
+        %   {\textbf{Zotlease - Student Housing Marketplace} $|$ \emph{React, React-Native, Stripe, Go, AWS}}{}
+        %   \resumeItemListStart
+        %     \resumeItem{Built student platform to find subleases and roommates to using React, React-Native, Go, and CockroachDB}
+        %     \resumeItem{Implemented automated payment processing using Stripe Connect to improve user experience and security}
+        %   \resumeItemListEnd
 
         \resumeProjectHeading
-          {\textbf{Multithreaded Distributed Key-Value Store} $|$ \emph{Go, gRPC, Docker, Kubernetes}}{}
+          {\textbf{Distributed Key-Value Store} $|$ \emph{Go, gRPC, Docker, Kubernetes}}{}
           \resumeItemListStart
-            \resumeItem{Developed distributed key-value store in \textbf{Go}, using \textbf{Raft}, log-structured merge tree, and bloom filters}
-            \resumeItem{Implemented hot-cold system using LRU eviction and compaction to improve performance.}
+            \resumeItem{Developed multithreaded distributed key-value store cluster in \textit{Go}, using \textit{Raft}, \textit{LSM trees}, and bloom filters}
+            \resumeItem{Implemented hot-cold system using LRU eviction and compaction. }
           \resumeItemListEnd
 
         % \resumeProjectHeading
@@ -333,12 +339,32 @@
         %   \resumeItemListEnd
 
         % \resumeProjectHeading
-        %   {\textbf{Web Search Engine} $|$ \emph{Python, Go, React, CockroachDB/PostgresSQL, Redis, Docker, React}}{}
+        %   {\textbf{Web Search Engine} $|$ \emph{Python, Go, React, Redis, Docker, React}}{}
         %   \resumeItemListStart
         %     \resumeItem{Created a search engine that parses 55,000+ pages, returning high relevance results within 300ms using PageRank}
         %     % \resumeItem{Implemented multithreaded web crawler to create inverted indexes stored in \textbf{CockroachDB}}
-        %     \resumeItem{Implemented multithreaded web crawler, index sharding (Go), and caching search results in \textbf{Redis} to fast queries}
-        %     \resumeItem{Utilized OpenAI GPT-4 API to generate page summaries for search results shown on \textbf{React} frontend.}
+        %     % \resumeItem{Implemented multithreaded web crawler, index sharding (Go), and caching search results in \textbf{Redis} to fast queries}
+        %   \resumeItemListEnd
+
+        % \resumeProjectHeading
+        %   {\textbf{Multi-level Feedback Queue Priority Process Scheduler} $|$ \emph{C}}{}
+        %   \resumeItemListStart
+        %     \resumeItem{Created an MLFQ priority process scheduler that queues based on CPU burst time and age, with aging and round-robin for the Pintos operating system}
+        %     % \resumeItem{Implemented multithreaded web crawler, index sharding (Go), and caching search results in \textbf{Redis} to fast queries}
+        %   \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Multithreaded Course Registration Web Server} $|$ \emph{C, TCP, Unix Sockets, Network Programming}}{}
+          \resumeItemListStart
+            \resumeItem{Created a multithreaded \textit{C} web server using pthreads and locks to handle concurrent registration requests.}
+            \resumeItem{Implemented max thread pool size to prevent server from being overloaded while maintaining high throughput.}
+          \resumeItemListEnd
+
+        % \resumeProjectHeading
+        %   {\textbf{Pipelined CPU Implementation} $|$ \emph{System Verilog, FPGA, C}}{}
+        %   \resumeItemListStart
+        %     \resumeItem{Implemented a 5-stage pipelined CPU on an FPGA, with a 32-bit instruction set architecture with RISC-V ISA}
+        %     \resumeItem{Improved performance by 75\% using pipelining, forwarding, and 2-bit BHT branch prediction}
         %   \resumeItemListEnd
 
         % \resumeProjectHeading
@@ -368,8 +394,8 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Go, Python, Java, TypeScript, Scala, HTML, CSS, SQL, R, C, C++} \\
-     \textbf{Tools/Frameworks}{: Spring Boot, Flask, Django, Kubernetes, Docker, gRPC, GraphQL, AWS, Google Cloud, React, PostgreSQL, MySQL, Node, Git, MongoDB, Cassandra, DynamoDB, Spark, Stripe, PyTorch, pandas, numpy} \\
-     \textbf{Awards}{: Winner of \textbf{Stanford}'s health\{hacks\} 2021 hackathon out of \textbf{178} participants. Presented a stochastic agent-based machine learning pandemic simulation tool built over 24 hours to a panel of \textbf{9} Ivy League judges.} \\
+     \textbf{Tools/Frameworks}{: Spring Boot, Express, React, Kubernetes, Docker, gRPC, GraphQL, AWS, Google Cloud, Flask, Django, PostgreSQL, MySQL, Node, Git, MongoDB, Cassandra, DynamoDB, Spark, Stripe, PyTorch, pandas, numpy} \\
+    %  \textbf{Awards}{: Winner of \textbf{Stanford}'s health\{hacks\} 2021 hackathon out of \textbf{178} participants. Presented a stochastic agent-based machine learning pandemic simulation visualizer built over 24 hours to a panel of \textbf{9} Ivy League judges.} \\
      % auth0, Django, React-Native, TailwindCSS, 
      % \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
      % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
