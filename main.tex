@@ -142,9 +142,12 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
+    % \resumeSubheading
+    %   {University of Illinois, Urbana Champaign}{Expected May 2026}
+    %   {Masters in Computer Science}{{}}
     \resumeSubheading
-      {University of California, Irvine}{Expected June 2025}
-      {B.S. in Computer Science}{{GPA 3.7}}
+      {University of California, Irvine}{Expected June 2026}
+      {Bachelors in Computer Science}{{GPA 3.7}}
     \resumeItem{\textbf{Courses:} Efficient ML Computing, NoSQL, Search Engines, Distributed Systems, Operating Systems, Databases}
 
     % \resumeItem{\textbf{Organizations:} ICS Student Council Project Committee, Hack at UCI Technology Organizer}
@@ -157,24 +160,26 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Tesla $|$ Software Engineer Intern}{Incoming Sep. 2024}
+      {Tesla $|$ Full-Stack Software Engineer Intern}{Incoming Sep. 2024}
       {Engineering Automation Software}{Palo Alto, CA}
       \resumeItemListStart
         \resumeItem{Full-stack developer working on engineering and simulation software using \textit{React}, \textit{Typescript}, \textit{Kafka}, \textit{AWS}, and \textit{Go}}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Snap Inc. $|$ Software Engineer Intern }{Jun. 2024 - Present}
+      {Snap Inc. $|$ Backend Software Engineer Intern }{Jun. 2024 - Present}
       {Messaging Core Service}{Los Angeles, CA}
       \resumeItemListStart
         \resumeItem{Developed new features for the Snapchat messaging core service using \textit{Go}, \textit{gRPC}, \textit{DynamoDB} and \textit{AWS}}
-        \resumeItem{Collaborated closely with mobile engineers to successfully deliver new chat wallpaper feed bumps and notifications, resulting in a 1.2\% increase in Snapchat+ subscriptions and improved chat send metrics.
+        \resumeItem{Built chat wallpaper feed bump and notification feature, resulting in a 1.2\% increase in Snapchat+ subscriptions.
         }
-        \resumeItem{Created chat clear feature reducing media storage costs by 1.2\% for \$500,000 in annual savings.}
+        \resumeItem{Collaborated with \textit{Meta} to create rich URL previews for \textit{Instagram} chat links using oEmbed Graph API.}
+        % \resumeItem{Created chat clear feature reducing media storage costs by 1.2\% for \$500,000 in annual savings.}
+        
       \resumeItemListEnd
 
     % \resumeSubheading
-    %   {NASA $|$ Researcher}{May. 2024 -- Present}
+    %   {NASA$|$ Researcher}{May. 2024 -- Present}
     %   {Lucy Mission}{Los Angeles, CA}
     %   \resumeItemListStart
     %       \resumeItem{Prototyped rover development for Lucy space mission using C++ and PyTorch.}
@@ -185,13 +190,13 @@
 
     \resumeSubheading
       {Snap Inc. $|$ Software Engineer Intern}{Sep. 2023 -- Oct. 2023}
-      {Ads Analytics Platform}{Los Angeles, CA}
+      {Monetization -- Ads Analytics}{Los Angeles, CA}
       \resumeItemListStart
-        \resumeItem{Designed and implemented multi-dimensional range partitioning for \textit{Apache Druid} analytics database cluster}
-        \resumeItem{Created \textit{Apache Beam \& Spark (PySpark)} pipelines to evenly distribute rows across data segments}
-        \resumeItem{Eliminated hot-keys with salted range indexes \textit{quantile sketches} improve query speed, and reduce compute by \textbf{35\%}}
+        \resumeItem{Designed and implemented multi-dimensional range partitioning for \textit{Apache Druid} analytics database cluster.}
+        \resumeItem{Created \textit{Apache Beam \& Spark (PySpark)} pipelines to evenly distribute rows across data segments.}
+        \resumeItem{Utilized salted range indexes and \textit{quantile sketches} to improve query speed and reduce required compute by 35\%.}
         % \resumeItem{Managed ads ETL pipelines using Apache Airflow and Apache Spark (PySpark) from \textit{BigQuery} and \textit{Apache Druid} for \textit{Hasura GraphQL} proxy server to power company-wide analytics dashboard}
-        \resumeItem{Served analytics data through \textit{Hasura GraphQL} proxy to \textit{React} dashboard, reducing load times by \textbf{13\%}}
+        % \resumeItem{Served analytics data through \textit{Hasura GraphQL} proxy to \textit{React} dashboard, reducing load times by \textbf{13\%}}
         
       \resumeItemListEnd
 
@@ -211,7 +216,7 @@
         % \resumeItem{Developed streaming ingestion for big data visualization platform for Snap ranking and engagement ML models}
         \resumeItem{Deployed \textit{Apache Kafka} cluster using \textit{Kubernetes} to process \textit{200TB/day} analytics metrics stream}
         \resumeItem{Developed real-time data warehouse ingestion into \textit{Google Cloud Storage} using \textit{Apache Druid} streaming ingestion}
-        \resumeItem{Integrated with \textit{Envoy} service mesh using \textit{Go}, \textit{gRPC}, and \textit{Helm} saving infra costs by \textit{24\%}}
+        % \resumeItem{Integrated with \textit{Envoy} service mesh using \textit{Go}, \textit{gRPC}, and \textit{Helm} saving infra costs by \textit{24\%}}
         
         % \resumeItem{Spearheaded service mesh integration with \textbf{Confluent} Platform, \textbf{gRPC}, \textbf{Go} - projected cost savings 31\%}
         % \resumeItem{Orchestrated \textbf{Kafka} event streaming cluster with \textbf{Strimzi}, \textbf{Kubernetes}, \textbf{Grafana}, \textbf{Prometheus}, and \textbf{gRPC}}
@@ -221,7 +226,7 @@
 
       \resumeSubheading
       {Operating Systems Course Assistant}{Apr. 2024 -- Jun. 2024}
-      {UCI School of Computer Science}{Irvine, CA}
+      {University of California, Irvine}{Irvine, CA}
       \resumeItemListStart
         \resumeItem{Assisted students with operating systems coursework in \textit{C} for processes, threads, memory, networking}
         \resumeItem{Held weekly office hours to assist students with assignments and concepts of operating systems}
@@ -289,12 +294,12 @@
         %     \resumeItem{Built services for spending analysis and fraud detection w/ \textbf{ARIMA}, \textbf{LSTM}, \textbf{isolation forest}, \textbf{FastAPI}}
         %   \resumeItemListEnd
 
-        % \resumeProjectHeading
-        %   {\textbf{Bobarank -- Milk Tea Leaderboards} $|$ \emph{React, Typescript, Next.js, Tailwind, Postgres}}{}
-        %   \resumeItemListStart
-        %   \resumeItem{Built a platform for users to discover the best boba stores in their area}
-        %   \resumeItem{Users can vote in in Head-to-Head competitions to update the elo rankings of boba stores}
-        %   \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Bobarank -- Milk Tea Leaderboards} $|$ \emph{React, Typescript, Next.js, Tailwind, Postgres, Drizzle}}{}
+          \resumeItemListStart
+          \resumeItem{Built a platform for users to discover the best boba stores in their area}
+          \resumeItem{Users can vote in in Head-to-Head competitions to update the elo rankings of boba stores}
+          \resumeItemListEnd
 
         % {\textbf{Unix Shell} $|$ \emph{C, gcc, Docker, Ubuntu, bash}}{}
         %   \resumeItemListStart
@@ -339,10 +344,8 @@
         \resumeProjectHeading
         {\textbf{Ride Reservation API} $|$ \emph{Go, Postgres, Stripe, NATS, Redis}}{}
         \resumeItemListStart
-            \resumeItem{Developed a ride reservation API with idempotency key system for handling request failures and safe retries.}
-            \resumeItem{Implemented a transaction-based approach to atomically commit changes and recover from failures across phases.}
-            \resumeItem{Utilized Stripe's API to create charges and manage payments.}
-            \resumeItem{Designed and implemented a background job system with NATS to handle async tasks like sending email receipts.}
+            \resumeItem{Utilized idempotency keys and multi-phase transactions for safe retries and atomic commits with Stripe.}
+            \resumeItem{Built a background job system with NATS to handle asynchronous tasks like email receipts.}
         \resumeItemListEnd
 
         % \resumeProjectHeading
