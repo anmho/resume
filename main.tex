@@ -96,6 +96,8 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
+
+
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
@@ -146,7 +148,7 @@
     %   {University of Illinois, Urbana Champaign}{Expected May 2026}
     %   {Masters in Computer Science}{{}}
     \resumeSubheading
-      {University of California, Irvine}{Expected June 2026}
+      {University of California, Irvine}{Expected Mar. 2025}
       {Bachelors in Computer Science}{{GPA 3.7}}
     \resumeItem{\textbf{Courses:} Efficient ML Computing, NoSQL, Search Engines, Distributed Systems, Operating Systems, Databases}
 
@@ -163,8 +165,13 @@
     \resumeSubheading
       {Tesla $|$ Software Engineer Intern}{Sep. 2024 - Present}
       {Engineering Automation Software}{Palo Alto, CA}
+      
+
+
       \resumeItemListStart
-        \resumeItem{Full-Stack developer working on engineering automation and simulation software using \textit{Go}, \textit{React}, \textit{Kafka}, and \textit{Databricks}}
+        \resumeItem{Developed aerodynamics tools with Go, React, Kafka, and Spark to streamline the vehicle engineering lifecycle.}
+        \resumeItem{Integrated StarCCM+ CFD simulation data streams with Kafka and Spark streaming to provide real-time updates on simulation jobs, enabling faster decision-making and accelerating the engineering design loop.}
+        \resumeItem{Implemented ArgoCD and Kubernetes to aid development of engineering validation tracking and shipping tools.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -172,7 +179,7 @@
       {Messaging Core Service}{Los Angeles, CA}
       \resumeItemListStart
         \resumeItem{Developed new features for the Snapchat messaging core service using \textit{Go}, \textit{gRPC}, \textit{DynamoDB} and \textit{AWS}}
-        \resumeItem{Built chat wallpaper feed bump and notification feature, resulting in a 1.2\% increase in Snapchat+ subscriptions.
+        \resumeItem{Built chat wallpaper feed bump and notification feature, resulting in a 1.2\% increase in Snapchat+ subscriptions monitored using Grafana and Prometheus dashboards.
         }
         \resumeItem{Collaborated directly with Meta to create rich URL previews for \textit{Instagram} chat links using oEmbed Graph API.}
         % \resumeItem{Created chat clear feature reducing media storage costs by 1.2\% for \$500,000 in annual savings.}
@@ -190,54 +197,57 @@
         {Operating Systems Course Assistant}{Apr. 2024 -- Present}
         {Donald Bren School of Information and Computer Science}{Irvine, CA}
         \resumeItemListStart
-          \resumeItem{Assisted students with operating systems coursework including syscalls, processes, threads, virtual memory, networking, and synchronization}
-          \resumeItem{Held weekly office hours to assist students with assignments and concepts of operating systems}
+          \resumeItem{Assisted students during weekly office hours with operating systems coursework including concurrency, processes, threads, memory, and networking}
       \resumeItemListEnd
 
-    % \resumeSubheading
-    %     {NASA $|$ Researcher}{May. 2024 -- Present}
-    %     {Lucy Mission}{Los Angeles, CA}
-    %     \resumeItemListStart
-    %         \resumeItem{Prototyped rover development for Lucy space mission using C++ and PyTorch.}
-    %         \resumeItem{Presented preliminary mission design to full time engineers.}
-    %       %   \resumeItem{Created mission plan and rover design including software.}
-    %     \resumeItemListEnd
+    \resumeSubheading
+        {NASA $|$ Research Developer}{May. 2024 -- Present}
+        {Lucy Mission}{Los Angeles, CA}
+        \resumeItemListStart
+            \resumeItem{Prototyped rover development for Lucy space mission using C++, CUDA, and PyTorch.}
+            \resumeItem{Presented preliminary mission design to full time engineers.}
+          %   \resumeItem{Created mission plan and rover design including software.}
+        \resumeItemListEnd
 
     \resumeSubheading
       {Snap Inc. $|$ Software Engineer Intern}{Sep. 2023 -- Oct. 2023}
       {Monetization -- Ads Analytics}{Los Angeles, CA}
       \resumeItemListStart
         \resumeItem{Designed and implemented multi-dimensional range partitioning for \textit{Apache Druid} analytics database cluster.}
-        \resumeItem{Created \textit{Apache Beam \& Spark (PySpark)} pipelines to evenly distribute rows across data segments.}
         \resumeItem{Utilized salted range indexes and \textit{quantile sketches} to improve query speed and reduce required compute by 35\%.}
+        \resumeItem{Created \textit{Apache Beam \& Spark (PySpark)} pipelines to evenly distribute rows across data segments.}
+        \resumeItem{Deployed \textit{Apache Kafka} cluster using \textit{Kubernetes} to process \textit{80TB/day} analytics metrics stream from GCS}
+
+
+        
         % \resumeItem{Managed ads ETL pipelines using Apache Airflow and Apache Spark (PySpark) from \textit{BigQuery} and \textit{Apache Druid} for \textit{Hasura GraphQL} proxy server to power company-wide analytics dashboard}
         % \resumeItem{Served analytics data through \textit{Hasura GraphQL} proxy to \textit{React} dashboard, reducing load times by \textbf{13\%}}
         
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Snap Inc. $|$ Software Engineer Intern}{June 2023 -- Sep. 2023}
-      {Metrics Stream Processing}{Los Angeles, CA}
-      \resumeItemListStart
-        % \resumeItem{Constructed \textbf{Kafka} distributed event streaming cluster to build real-time data analytics \textbf{Java} backend, enhancing monetization, costs, and ML ranking models, improving ads ranking accuracy and A/B cost analysis}
-        % \resumeItem{Implemented data streaming ingestion for Snap's data platform backend using \textbf{Java, Scala, and Kafka}}
-      % , using \textbf{Java, Scala, and Kafka}, supporting \textbf{8 billion metrics per day}
+    % \resumeSubheading
+    %   {Snap Inc. $|$ Software Engineer Intern}{June 2023 -- Sep. 2023}
+    %   {Metrics Stream Processing}{Los Angeles, CA}
+    %   \resumeItemListStart
+    %     % \resumeItem{Constructed \textbf{Kafka} distributed event streaming cluster to build real-time data analytics \textbf{Java} backend, enhancing monetization, costs, and ML ranking models, improving ads ranking accuracy and A/B cost analysis}
+    %     % \resumeItem{Implemented data streaming ingestion for Snap's data platform backend using \textbf{Java, Scala, and Kafka}}
+    %   % , using \textbf{Java, Scala, and Kafka}, supporting \textbf{8 billion metrics per day}
         
-        % \resumeItem{Developed distributed stream processing system for Snap's ads ranking analytics platform for real-time data warehouse ingestion into \textbf{GCS} and \textbf{Druid} using \textbf{Kafka} and \textbf{Java}, supporting \textbf{8 billion transactions/day}}
+    %     % \resumeItem{Developed distributed stream processing system for Snap's ads ranking analytics platform for real-time data warehouse ingestion into \textbf{GCS} and \textbf{Druid} using \textbf{Kafka} and \textbf{Java}, supporting \textbf{8 billion transactions/day}}
         
-        % using React, Java, Hasura, GraphQL, Node.js, TypeScript
-        % \resumeItem{Added real-time data visualization with \textbf{React}, \textbf{TypeScript}, \textbf{GraphQL}}
-        % \resumeItem{Orchestrated \textbf{Kafka} cluster with \textbf{Kubernetes, ZooKeeper} to support streaming analytics ingestion for \textbf{Google Cloud Storage}, using \textbf{Apache Druid} on \textbf{Compute Engine} clusters processing \textbf{200TB} data stream each day}
-        % \resumeItem{Developed streaming ingestion for big data visualization platform for Snap ranking and engagement ML models}
-        \resumeItem{Deployed \textit{Apache Kafka} cluster using \textit{Kubernetes} to process \textit{80TB/day} analytics metrics stream}
-        \resumeItem{Developed real-time data warehouse ingestion into \textit{Google Cloud Storage} using \textit{Apache Druid} streaming ingestion}
-        % \resumeItem{Integrated with \textit{Envoy} service mesh using \textit{Go}, \textit{gRPC}, and \textit{Helm} saving infra costs by \textit{24\%}}
+    %     % using React, Java, Hasura, GraphQL, Node.js, TypeScript
+    %     % \resumeItem{Added real-time data visualization with \textbf{React}, \textbf{TypeScript}, \textbf{GraphQL}}
+    %     % \resumeItem{Orchestrated \textbf{Kafka} cluster with \textbf{Kubernetes, ZooKeeper} to support streaming analytics ingestion for \textbf{Google Cloud Storage}, using \textbf{Apache Druid} on \textbf{Compute Engine} clusters processing \textbf{200TB} data stream each day}
+    %     % \resumeItem{Developed streaming ingestion for big data visualization platform for Snap ranking and engagement ML models}
+        % \resumeItem{Deployed \textit{Apache Kafka} cluster using \textit{Kubernetes} to process \textit{80TB/day} analytics metrics stream from GCS}
+        % \resumeItem{Developed real-time data warehouse ingestion into \textit{Google Cloud Storage} using \textit{Apache Druid} streaming ingestion}
+    %     % \resumeItem{Integrated with \textit{Envoy} service mesh using \textit{Go}, \textit{gRPC}, and \textit{Helm} saving infra costs by \textit{24\%}}
         
-        % \resumeItem{Spearheaded service mesh integration with \textbf{Confluent} Platform, \textbf{gRPC}, \textbf{Go} - projected cost savings 31\%}
-        % \resumeItem{Orchestrated \textbf{Kafka} event streaming cluster with \textbf{Strimzi}, \textbf{Kubernetes}, \textbf{Grafana}, \textbf{Prometheus}, and \textbf{gRPC}}
-        % \resumeItem{Streamlined developer workflow by creating \textbf{docker-compose} local cluster, reducing ramp up by \textbf{% days}}
+    %     % \resumeItem{Spearheaded service mesh integration with \textbf{Confluent} Platform, \textbf{gRPC}, \textbf{Go} - projected cost savings 31\%}
+    %     % \resumeItem{Orchestrated \textbf{Kafka} event streaming cluster with \textbf{Strimzi}, \textbf{Kubernetes}, \textbf{Grafana}, \textbf{Prometheus}, and \textbf{gRPC}}
+    %     % \resumeItem{Streamlined developer workflow by creating \textbf{docker-compose} local cluster, reducing ramp up by \textbf{% days}}
 
-      \resumeItemListEnd
+    %   \resumeItemListEnd
       
 
     % \resumeSubheading
@@ -313,9 +323,9 @@
         %   \resumeItemListEnd
 
         \resumeProjectHeading
-          {\textbf{Push Notification Scheduler} $|$ \emph{Go, AWS Lambda, DynamoDB, AWS Event Scheduler, AWS CDK, Expo Notifications}}{}
+          {\textbf{Push Notification Scheduler} $|$ \emph{Go, AWS Lambda, DynamoDB, AWS Event Scheduler, AWS CDK, Expo}}{}
           \resumeItemListStart
-          \resumeItem{Built a serverless multi-tenant microservice for sending push notifications to app users and scheduling one-time delayed push notification execution.}
+          \resumeItem{Built a serverless multi-tenant microservice for sending push notifications to app users and scheduling one-time delayed push notification execution for React-Native mobile apps.}
           \resumeItemListEnd
 
         % {\textbf{Unix Shell} $|$ \emph{C, gcc, Docker, Ubuntu, bash}}{}
@@ -358,11 +368,12 @@
         %     \resumeItem{Implemented query processing and query optimizer to execute optimal query plan.}
         %     % \resumeItem{Designed and optimized data structures and algorithms in C++ for efficient storage and retrieval of large datasets.}
         %   \resumeItemListEnd
+
         \resumeProjectHeading
-        {\textbf{Ride Reservation API} $|$ \emph{Go, Postgres, Stripe, NATS, Redis}}{}
+        {\textbf{Idempotent Ride Reservation API} $|$ \emph{Go, Postgres, Stripe, NATS, Redis}}{}
         \resumeItemListStart
             \resumeItem{Utilized idempotency keys and multi-phase transactions for safe retries and atomic commits with Stripe.}
-            \resumeItem{Built a background job system with NATS to handle asynchronous tasks like email receipts.}
+            \resumeItem{Built a background job system with NATS to handle asynchronous event-driven tasks such as email receipts.}
         \resumeItemListEnd
 
         % \resumeProjectHeading
@@ -374,7 +385,7 @@
         %     \resumeItemListEnd
 
         \resumeProjectHeading
-          {\textbf{Distributed Key-Value Store} $|$ \emph{C++, Go, gRPC, Docker, Kubernetes}}{}
+          {\textbf{Distributed Key-Value Store} $|$ \emph{Go, gRPC, Docker, Kubernetes}}{}
           \resumeItemListStart
             \resumeItem{Developed multithreaded distributed key-value store cluster in \textit{Go}, using \textit{B trees}, \textit{LSM trees}, and \textit{bloom filters}}
             \resumeItem{Implemented hot-cold system using LRU eviction and compaction using Raft replication. }
